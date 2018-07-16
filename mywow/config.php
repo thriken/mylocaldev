@@ -1,11 +1,18 @@
 <?php
+/*
+ * php 5.6 
+ */
 header ("Content-Type: text/html; charset=utf-8");
-$con = mysql_connect("127.0.0.1:3306", "root", "");
+$host="127.0.0.1";
+$user="root";
+$password="123456";
+$database="mywow";
+$port="3306";
+$con = mysqli_connect($host, $user, $password, $database, $port);
 if (!$con) {
 	die("mysql服务器连接失败。");
 }
-@mysql_select_db("mywow") or die("数据库连接失败。");
-mysql_query("set names 'UTF8'");
+mysqli_query($con, "set names 'UTF8'");
 
 
 $arr_pro=["专业","附魔","珠宝加工","铭文","工程","锻造","制皮","裁缝","炼金","侏儒工程学","地精工程学","草药学","剥皮","采矿"];

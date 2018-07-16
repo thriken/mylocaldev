@@ -1,7 +1,6 @@
 <?php
 include("config.php"); 
-header ("Content-Type: text/html; charset=utf-8");
-
+$rs=null;
 if (!empty($_GET['id'])) {
 	$edit = $_GET['id'];
 	$sql = "select * from blog where id='$edit'";

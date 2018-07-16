@@ -1,10 +1,10 @@
 <?php
-    include("config.php"); //����������ݿ�
-    header ("Content-Type: text/html; charset=utf-8");
+    include("config.php"); 
+
     if (!empty($_GET['id'])) {
-        $del = $_GET['id'];  //ɾ��blog
-        $sql= "delete from blog where id='$del' ";
-        mysql_query($sql);
+        $del = $_GET['id'];  
+        $sql= "delete from blog where id=".$del;
+        mysqli_query($con,$sql);
         echo "delete success!";
 
     }

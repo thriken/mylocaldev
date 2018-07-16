@@ -34,7 +34,7 @@
 			echo '<meta name="robots" content="noindex, nofollow">';
 		}
 	?>
-	<title>Vanilla Kit | <?php echo $pagetitle ?></title>
+	<title>First Dev | <?php echo $pagetitle ?></title>
 	<meta name="title" content="Vanilla Kit | <?php echo $pagetitle ?>">
 	<meta name="description" content="<?php echo $pagedescription ?>">
 	<meta name="keywords" content="<?php echo $pagekeywords ?>" /> 

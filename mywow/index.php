@@ -32,8 +32,8 @@ include("config.php");
 <?php
 
     $sql ="select * from hero";
-    $query = mysql_query($sql);
-    while ($rs = mysql_fetch_array($query)) {
+    $query = mysqli_query($con,$sql);
+    while ($rs = mysqli_fetch_array($query)) {
 		
     	$hid=$rs['hid'];//角色ID
 		$hname=$rs['hname']; //角色名
