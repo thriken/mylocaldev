@@ -19,6 +19,9 @@ input#hname{
 form div{
 	padding-top: 5px;
 }
+#cimg{float: left;z-index: 1;}
+/* 以下是战网样式	*/
+
 #faction{
 	width: 18px;
 	height: 18px;

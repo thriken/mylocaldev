@@ -42,11 +42,16 @@ include("config.php");
 		
 		$race;
 		//获取种族名称和阵营ID
+		$faction=["阵营","部落","联盟"];
+		$faction_en=["faction","horde","alliance"];
 		if($rs['rid'] >0 ){
-			if($rs['rid']<=9)
+			if($rs['rid']<=9){
 				$faction="部落";
-			else
+				$faction_en="horde";
+			}else{
 				$faction="联盟";
+				$faction="alliance";
+			}	
 			$race=$arr_race[$rid]; //种族
 		}
 		
@@ -54,7 +59,6 @@ include("config.php");
 		//获取职业信息
 		$class=$arr_class[$rs['cid']];
 		$class_en=$arr_class_en[$rs['cid']];
-		
 		$pid1=$rs['pid1'];
 		$p1=$rs['p1'];
 		$pid2=$rs['pid2'];
@@ -67,9 +71,11 @@ include("config.php");
 		$pp6=$rs['pp6'];
 ?>
 		<tr>
-    		<td  class='<?php echo $race;  ?>' ><a href="edit.php?hid=<?php echo $hid; ?>"><?php echo $hname; ?></a> </td>
-			<td><?php echo $race; ?></td>
-			<td><?php echo $class; ?></td>
+			
+    		<td  class='<?php echo $race;  ?>' ><img id="cimg" src="images/<?php echo $class_en?>.jpg" /><a href="edit.php?hid=<?php echo $hid; ?>"><?php echo $hname; ?></a> </td>
+			<td>
+				<span class="<?php echo $faction_en?>"><?php echo $faction?></span><?php echo $race; ?></td>
+			<td ><span class="<?php echo $class_en?>"><?php echo $class; ?></span></td>
 			<td><?php echo $pid1; ?></td>
 			<td><?php echo $p1; ?></td>
 			<td><?php echo $pid2; ?></td>
