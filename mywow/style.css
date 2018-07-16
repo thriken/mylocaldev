@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+div#header{
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+table{
+	border-collapse:collapse;
+}
+td{
+	border: solid 1px blue;
+}
+input {
+	width: 60px;
+}
+input#hname{
+	width: 120px;
+}
+
+form div{
+	padding-top: 5px;
+}
+#faction{
+	width: 18px;
+	height: 18px;
+	background: url(images/z-small.png) 0px 0px #FFFFFF;
+	font-size: 14;
+}
+	/* faction */
+	.alliance { background-color: #247FAA; }
+	.horde { background-color: #b30000; }
+
+	/* item quality */
+	.color-q0, .color-q0 { color: #9d9d9d !important; } /* poor (gray) */
+	.color-q1, .color-q1 { color: #ffffff !important; } /* common (white) */
+	.color-q2, .color-q2 { color: #1eff00 !important; } /* uncommon (green) */
+	.color-q3, .color-q3 { color: #0081ff !important; } /* #0070dd rare (blue) */
+	.color-q4, .color-q4 { color: #c600ff !important; } /* #a335ee epic (purple) */
+	.color-q5, .color-q5 { color: #ff8000 !important; } /* lengendary (orange) */
+	.color-q6, .color-q6 { color: #e5cc80 !important; } /* artifact (gold) */
+	.color-q7, .color-q7 { color: #00ccff !important; } /* heirloom (lt blue) */
+	/* class */
+	.warrior  	{ background-color: #c69b6d !important; } /* warrior */
+	.paladin  	{ background-color: #f48cba !important; } /* paladin */
+	.hunter  	{ background-color: #aad372 !important; } /* hunter */
+	.rogue  	{ background-color: #fff468 !important; } /* rogue */
+	.priest  	{ background-color: #f0ebe0 !important; } /* priest */
+	.dk  		{ background-color: #c41e3b !important; } /* death knight */
+	.shaman  	{ background-color: #2359ff !important; } /* shaman */
+	.mage  		{ background-color: #68ccef !important; } /* mage */
+	.warlock  	{ background-color: #9382c9 !important; } /* warlock */
+	.monk 		{ background-color: #00ffba !important; } /* monk */
+	.druid 		{ background-color: #ff7c0a !important; } /* druid */
+	.dh 		{ background-color: #a330c9 !important; } /* demon hunter */
+	
+	/* expansion */
+	.color-ex0, .color-exp0 { color: #fff468 !important; } /* classic */
+	.color-ex1, .color-exp1 { color: #aad372 !important; } /* the burning crusade */
+	.color-ex2, .color-exp2 { color: #68ccef !important; } /* wrath of the lich king */
+	.color-ex3, .color-exp3 { color: #ff7c0a !important; } /* cataclysm */
+	.color-ex4, .color-exp4 { color: #00ffba !important; } /* Mists of Pandaria */
+	.color-ex5, .color-exp5 { color: #ff320a !important; } /* warlords of draenor */
+	.color-ex6, .color-exp6 { color: #a8ff00 !important; } /* legion */
+	.alliance-mage{
+		background-position: 0,-36px;
+		width: 36px;
+		height: 18px;
+	}
+	.horde-warrior:after{
+		background-position: 0 -72px;
+		width: 36px;
+		height: 18px;
+	}
+	.flair:after{
+		background: url(images/z-small.png) no-repeat scroll 16px 16px transparent;
+		display: inline-block;
+		margin-left: 3px;
+		vertical-align: middle;
+		height: 10px;
+		content: "";	
+	}
+
