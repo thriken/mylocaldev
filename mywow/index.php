@@ -50,7 +50,7 @@ include("config.php");
 				$faction_en="horde";
 			}else{
 				$faction="联盟";
-				$faction="alliance";
+				$faction_en="alliance";
 			}	
 			$race=$arr_race[$rid]; //种族
 		}
