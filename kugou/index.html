@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>酷狗单曲解析保存</title>
+		<meta charset="utf-8" />
+		<style>
+			#form{
+				width: 100%;
+				height: 120px;
+				background-color: #eeeeee;
+				padding-top:30px;
+				font-size:17px;
+			}
+			#page1{
+				width: auto;
+				background-color: #ffeeee;
+				height: 600px;
+				}
+		</style>
+		<script>
+			function submit1(){
+				var id=$('#hash').val();
+                $("#page1").empty();
+				$("<iframe style='width: 98%;height: 98%;' src='json.php?hash="+id+"' />").appendTo($("#page1"));
+			}
+			function submit2(){
+				var aurl=encodeURIComponent($('#url').val());
+                $("#page1").empty();
+				$("<iframe style='width: 98%;height: 98%;' src='url.php?url="+aurl+"' />").appendTo($("#page1"));
+			}
+			function submit3(){
+				$("#page1").empty();
+				var aurl=$('#url1').val();
+				var i = aurl.indexOf('=');
+				var j = aurl.lastIndexOf('=');
+				var hash = aurl.substr(i+1,32);
+				var album_id = aurl.substr(j+1);
+				$("<iframe style='width: 98%;height: 98%;' src='/kugou/json.php?hash="+hash+"&album_id="+album_id+"' />").appendTo($("#page1"));
+			}
+		</script>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="form">
+			<form>
+				请输入酷狗音乐单曲ID：<input type="text" name="hash" id="hash"  /> 
+				<input type="button" value="确定" onclick="javascript:submit1()" />例如：936051EA140E3CFACB629D2BFAF430D7
+			</form>
+			<form>
+				请输入酷狗单曲链接：(php处理)<input type="text"  name="url" id="url" value=""/>
+				<input type="button" onclick="javascript:submit2()" value="解析"/>例如：http://www.kugou.com/song/#hash=8C743A283935FF2C1EB62A8FA855DB60&album_id=504194
+			</form>
+			<form>
+				请输入酷狗单曲链接：( j q 处理)<input type="text"  name="url1" id="url1" value=""/>
+				<input type="button" onclick="javascript:submit3()" value="解析"/>例如：http://www.kugou.com/song/#hash=8C743A283935FF2C1EB62A8FA855DB60&album_id=504194
+			</form>
+		</div>
+		<div id="page1">
+			
+		</div>
+<script>var _hmt = _hmt || [];(function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?00260854a144c6a7b7bd9e7eda7ac81b"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
+<script type="text/javascript" src="https://js.users.51.la/4635071.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34799699-2"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-34799699-2');</script>
+	</body>
+</html>

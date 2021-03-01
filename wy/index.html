@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>WY云音乐解析保存</title>
+		<meta charset="utf-8" />
+		<style>
+			#form{
+				width: 100%;
+				height: 120px;
+				background-color: #eeeeee;
+				padding-top:30px;
+				font-size:17px;
+			}
+			#page1{
+				width: 960px;
+				background-color: #ffeeee;
+				height: 600px;
+				}
+			#page2{
+				width: 960px;
+				float: right;
+				margin-top: -600px;
+				background-color: #EEEEEE;
+				height: 600px;
+                word-wrap:break-word;
+				}
+		</style>
+		<script>
+			function submit1(){
+				var id=$('#id').val();
+                $("#page1").empty();$("#page2").empty();
+				$("<iframe style='width: 98%;height: 98%;' src='json.php?id="+id+"' />").appendTo($("#page1"));
+				$("<iframe style='width: 98%;height: 98%;' src='302.php?id="+id+"' />").appendTo($("#page2"));
+			}
+		</script>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="form">
+			<form>
+				请输入WY音乐单曲ID：<input type="text" name="id" id="id"  /> 
+				<input type="button" value="确定" onclick="javascript:submit1()" />例如：29722582
+			</form>
+		</div>
+		<div id="page1">
+			
+		</div>
+		<div id="page2">
+			
+		</div>
+<script>var _hmt = _hmt || [];(function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?00260854a144c6a7b7bd9e7eda7ac81b"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
+<script type="text/javascript" src="https://js.users.51.la/4635071.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34799699-2"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-34799699-2');</script>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>5sing音乐解析</title>
+		<style>
+			#form{
+				width: 100%;
+				height: 120px;
+				background-color: #eeeeee;
+				padding-top:30px;
+				font-size:17px;
+			}
+			#page1{
+				width: auto;
+				background-color: #ffefef;
+				height: 600px;
+				}
+			#sid{width:230px;}
+            #type{width:80px;}
+            #url1{width:300px}
+		</style>
+		<script>
+			function submit1(){
+				var id=$('#sid').val();
+				var t=$('#type').val();
+        $("#page1").empty();
+				$("<iframe style='width: 98%;height: 98%;' src='json.php?id="+id+"&t="+t+"' />").appendTo($("#page1"));
+			}
+			function submit2(){
+				var surl=$('#url1').val();
+				var i = surl.indexOf(":");
+				surl = surl.substr(i+3);
+				var args = new Array();
+				args=surl.split("/");
+				var t = args[1];
+				var id = args[2].replace(".html","");
+        $("#page1").empty();
+				$("<iframe style='width: 98%;height: 98%;' src='json.php?id="+id+"&t="+t+"' />").appendTo($("#page1"));
+			}
+		</script>
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="form1">
+			<form>
+				请输入5sing音乐单曲ID：<input type="text" name="sid" id="sid"  /> 
+				<select id="type" name="type">
+					<option value="yc" selected="selected">原唱</option>
+					<option value="fc">翻唱</option>
+					<option value="bz">伴奏</option>
+				</select>
+				<input type="button" value="确定" onclick="javascript:submit1()" />例如：3712300 
+			</form>
+		</div>
+		<div id="form2">
+			<form>
+				请输入5sing音乐单曲链接：<input type="text" name="url1" id="url1"  /> 
+				<input type="button" value="确定" onclick="javascript:submit2()" />例如：http://5sing.kugou.com/yc/403341.html
+			</form>
+		</div>
+		<div id="page1">
+			
+		</div>
+<script>var _hmt = _hmt || [];(function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?00260854a144c6a7b7bd9e7eda7ac81b"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script>
+<script type="text/javascript" src="https://js.users.51.la/4635071.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34799699-2"></script>
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-34799699-2');</script>
+	
+	</body>
+</html>

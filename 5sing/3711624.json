@@ -1,0 +1,21 @@
+{
+	"code": 1000,
+	"message": "",
+	"data": {
+		"songid": 3711624,
+		"songtype": "yc",
+		"squrl": "http:\/\/fs.5sing.kgimg.com\/201809261703\/7572b02a7197ea7bc5235fe4a00f3f97\/G138\/M02\/02\/19\/KocBAFueWoyADzGuAKrJlC0L_Xo726.mp3",
+		"squrlmd5": "dcef1343ba65bb95f3d75d59837fe39b",
+		"sqsize": 11192724,
+		"sqext": "mp3",
+		"hqurl": "http:\/\/fs.5sing.kgimg.com\/201809261703\/b4dc4567fa6c4ead89a3b6ffde0bc057\/G140\/M02\/09\/11\/LIcBAFujfyuAe67vABF8j61U-_s567.m4a",
+		"hqurlmd5": "23e6be00bfb5973a9d09d687dc030dee",
+		"hqsize": 1145999,
+		"hqext": "m4a",
+		"lqurl": "http:\/\/fs.5sing.kgimg.com\/201809261703\/b4dc4567fa6c4ead89a3b6ffde0bc057\/G092\/M06\/07\/17\/nA0DAFujfzeAbruvAEWE1ZIOqdw154.m4a",
+		"lqurlmd5": "6e1b006102225032a6d1a4864b903735",
+		"lqsize": 4555989,
+		"lqext": "m4a"
+	},
+	"success": true
+}
