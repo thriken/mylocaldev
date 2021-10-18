@@ -1,3 +1,6 @@
+<html>
+	<head>
+	<meta charset="utf-8" />
 <?php
 	$id=$_GET['id'];
 	$filename=$_GET['n'];

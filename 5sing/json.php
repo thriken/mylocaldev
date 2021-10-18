@@ -81,7 +81,7 @@ function ourl($url){
  if ($songtype=='bz')  $t='伴奏'; 
 
 echo("<p>歌曲地址：<a target=_blank href=".$rurl.">$rurl</a></p>");
-echo "歌曲名称：".$songn;
+echo "歌曲名称：".$songn."&nbsp;&nbsp;&nbsp;&nbsp;";
 echo "歌曲类型：".$t;
 echo $lqsize !=0 ? ("<p><a target=_blank href=".ourl($lqurl).">普通音质</a> &nbsp; 大小：".fsizefmt($lqsize)."</p>") : null;
 echo $hqsize !=0 ? ("<p><a target=_blank href=".ourl($hqurl).">&nbsp;高&nbsp;音&nbsp;质</a> &nbsp;&nbsp; 大小：".fsizefmt($hqsize)."</p>"):null;

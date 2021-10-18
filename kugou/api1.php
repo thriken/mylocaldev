@@ -1,23 +1,30 @@
+<html>
+	<head>
+	<meta charset="utf-8" />
 <?php
-/*ÒôÀÖ²¿·Ö*/
-/*¸èÇúhashÖµ*/
+/*éŸ³ä¹éƒ¨åˆ†*/
+/*æ­Œæ›²hashå€¼*/
 $music_hash="91b5a3ba1420b1156afd7918c1af27e1";
- 
-/*¿É»ñÈ¡ËùÓĞÃâ·ÑµÄ¿á¹·ÒôÀÖ£¨º¬ÎŞËğ£©*/
+$music_hash="1EAA154475F9461B532152A6B89AE74F";
+
+
+/*å¯è·å–æ‰€æœ‰å…è´¹çš„é…·ç‹—éŸ³ä¹ï¼ˆå«æ— æŸï¼‰*/
 echo "http://trackercdn.kugou.com/i/v2/?cmd=25&key=".md5(strtolower($music_hash)."kgcloudv2")."&hash={$music_hash}&pid=1&behavior=download<br/>";
  
-/*¿É»ñÈ¡ËùÓĞÃâ·ÑµÄ¿á¹·ÒôÀÖ£¨º¬ÎŞËğ£©¼°ÊÕ·ÑÒôÀÖµÄ128KbpsÒôÖÊ£¨³ı Ğè¹ºÂò×¨¼­µÄÊÕ·ÑÒôÀÖ£©*/
-$mid="0";//ËæÒâ ±ØÌî
-$userid="0";//ËæÒâ ±ØÌî
-$appid="1005";//±ØÌî1005
+/*å¯è·å–æ‰€æœ‰å…è´¹çš„é…·ç‹—éŸ³ä¹ï¼ˆå«æ— æŸï¼‰åŠæ”¶è´¹éŸ³ä¹çš„128KbpséŸ³è´¨ï¼ˆé™¤ éœ€è´­ä¹°ä¸“è¾‘çš„æ”¶è´¹éŸ³ä¹ï¼‰*/
+$mid="0";//éšæ„ å¿…å¡«
+$userid="0";//éšæ„ å¿…å¡«
+$appid="1005";//å¿…å¡«1005
 echo "http://trackercdn.kugou.com/i/v2/?cmd=26&key=".md5(strtolower($music_hash)."kgcloudv2".$appid.$mid.$userid)."&hash={$music_hash}&pid=1&behavior=play&mid={$mid}&appid={$appid}&userid={$userid}&version=0&vipType=0&token=0<br>";
  
-/*MV²¿·Ö*/
-/*MV HASHÖµ*/
+/*MVéƒ¨åˆ†*/
+/*MV HASHå€¼*/
+echo "<hr/>MVè§£æ:<br/>";
 $mv_hash="1855DD770F35100F4BEF9C4634B42D55";
-echo     "http://trackermv.kugou.com/interface/index/cmd=4&hash=".strtoupper($mv_hash)."&key=".md5(strtoupper($mv_hash)."kgcloud")."&ext=mp4<br/>";echo "http://trackermv.kugou.com/interface/index/cmd=100&hash=".strtoupper($mv_hash)."&key=".md5(strtoupper($mv_hash)."kugoumvcloud")."&pid=6&ext=mp4&ismp3=0<br/>";
-echo "http://trackermv.kugou.com/interface/index/cmd=103&hash=".strtoupper($mv_hash)."&key=".md5(strtoupper($mv_hash)."kugoumvcloud")."&pid=6&ext=mp4&ismp3=0<br/>";
-echo "http://trackermv.kugou.com/interface/index/cmd=104&hash=".strtoupper($mv_hash)."&ext=mp4<br/>";
- 
- 
+echo "MKVä¸‹è½½é“¾æ¥ï¼š<br/>http://trackermv.kugou.com/interface/index/cmd=4&hash=".strtoupper($mv_hash)."&key=".md5(strtoupper($mv_hash)."kgcloud")."&ext=mp4<br/>";
+echo "MKVä¸‹è½½ç›´é“¾ï¼š<br/>http://trackermv.kugou.com/interface/index/cmd=104&hash=".strtoupper($mv_hash)."&ext=mp4<br/>";
+echo "MP4:<br/> http://trackermv.kugou.com/interface/index/cmd=100&hash=".strtoupper($mv_hash)."&key=".md5(strtoupper($mv_hash)."kugoumvcloud")."&pid=6&ext=mp4&ismp3=0<br/>";
+echo "MKV:<br/> http://trackermv.kugou.com/interface/index/cmd=103&hash=".strtoupper($mv_hash)."&key=".md5(strtoupper($mv_hash)."kugoumvcloud")."&pid=6&ext=mp4&ismp3=0<br/>";
+
+
 ?>

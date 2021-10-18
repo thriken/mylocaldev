@@ -9,12 +9,12 @@ var $db; //用于存储数据库连接
 var $query; //用于存储查询源 
 //! 构造函数. 
 /** 
-* 创建一个新的DataAccess对象 
-* @param $host 数据库服务器名称 
-* @param $user 数据库服务器用户名 
-* @param $pass 密码 
-* @param $db 数据库名称 
-*/
+** 创建一个新的DataAccess对象 
+** @param $host 数据库服务器
+** @param $user 数据库服务器用户名 
+** @param $pass 密码 
+** @param $db 数据库名称 
+**/
 function __construct($host,$user,$pass,$db) { 
 $this->db=mysql_pconnect($host,$user,$pass); //连接数据库服务器 
 mysql_select_db($db,$this->db); //选择所需数据库 
@@ -24,10 +24,10 @@ mysql_select_db($db,$this->db); //选择所需数据库
 } 
 //! 执行SQL语句 
 /** 
-* 执行SQL语句，获取一个查询源并存储在数据成员$query中 
-* @param $sql 被执行的SQL语句字符串 
-* @return void 
-*/
+** 执行SQL语句，获取一个查询源并存储在数据成员$query中 
+** @param $sql 被执行的SQL语句字符串 
+** @return void 
+**/
 function fetch($sql) { 
 $this->query=mysql_unbuffered_query($sql,$this->db); // Perform query here 
 } 

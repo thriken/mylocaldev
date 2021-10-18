@@ -10,3 +10,6 @@ echo $hash=$arr1[1];
 echo $album_id=$arr2[1];
 header("Location:/kugou/json.php?hash=".$hash."&album_id=".$album_id);
 ?>
+<html>
+	<head>
+	<meta charset="utf-8" />
