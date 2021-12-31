@@ -67,9 +67,10 @@ function fsizefmt($num){
 	return $fsize;
 }
 function ourl($url){
-	$url_domain='//data.5sing.kgimg.com';
+	$url_domain='//wsaudiobssdlbig.yun.kugou.com';
 	$link=explode("/",$url);
-	$link2=$link[0].$url_domain.'/'.$link[5].'/'.$link[6].'/'.$link[7].'/'.$link[8].'/'.$link[9];
+	//print_r($link);
+	$link2=$link[0].$url_domain.'/'.$link[3].'/'.$link[4].'/'.$link[5].'/'.$link[6].'/'.$link[7].'/'.$link[8];
 	return $link2;
 }
 

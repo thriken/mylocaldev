@@ -1,0 +1,5 @@
+http://www.kuwo.cn/url?format=mp3&rid=75559754&response=url&type=convert_url3&br=256kmp3&from=web&t=1632905145101&httpsStatus=1
+
+http://m.kuwo.cn/newh5/singles/songinfoandlrc?musicId=75559754&httpsStatus=1
+
+http://antiserver.kuwo.cn/anti.s?rid=MUSIC_195165784&response=res&format=mp3|aac&type=convert_url&br=128kmp3&agent=iPhone&callback=getlink&jpcallback=getlink.mp3

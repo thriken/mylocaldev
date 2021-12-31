@@ -1,5 +1,5 @@
 <?php header("Content-Type: text/html; charset=utf-8");
-include ("config.php");
+include 'config.php';
 if (!empty($_POST['sub'])) {
   $hanme = $_POST['hname'];
   $rid = $_POST['rid'];
@@ -15,7 +15,7 @@ if (!empty($_POST['sub'])) {
   $pp5 = $_POST['pp5'];
   $pp6 = $_POST['pp6'];
   $sql= "insert into hero values(null,'0','$title',now(),'$con')";
-  mysql_query($sql);
+  mysqli_query($con,$sql);
   echo "insert success!";
   echo $sql;
 }
@@ -43,8 +43,8 @@ if (!empty($_POST['sub'])) {
 				<select name="rid">
 					<?php
 $sql="select * from race";
-$query=mysqli_query($sql);
-while($rs = mysql_fetch_array($query)){
+$query=mysqli_query($con,$sql);
+while($rs = mysqli_fetch_array($query,MYSQLI_ASSOC)){
 ?>
 <option value="<? echo $rs['rid']; ?>">  <? echo $rs['rname']; ?> </option>
 <? } ?>
@@ -56,8 +56,8 @@ while($rs = mysql_fetch_array($query)){
 				<select name="cid">
 					<?php
 $sql="select * from class";
-$query=mysql_query($sql);
-while($rs = mysql_fetch_array($query)){
+$query=mysqli_query($con,$sql);
+while($rs = mysqli_fetch_array($query,MYSQLI_ASSOC)){
 ?>
 <option class="<?php echo $rs['cname_en']; ?>" value="<? echo $rs['cid']; ?>">  <? echo $rs['cname']; ?> </option>
 <? } ?>
@@ -70,8 +70,8 @@ while($rs = mysql_fetch_array($query)){
 				<select name="pid1">
 					<?php
 $sql="select * from profession";
-$query=mysql_query($sql);
-while($rs = mysql_fetch_array($query)){
+$query=mysqli_query($con,$sql);
+while($rs = mysqli_fetch_array($query)){
 ?>
 <option value="<? echo $rs['pid']; ?>">  <? echo $rs['profession']; ?> </option>
 <? } ?>
@@ -84,8 +84,8 @@ while($rs = mysql_fetch_array($query)){
 				<select name="pid2">
 					<?php
 $sql="select * from profession";
-$query=mysql_query($sql);
-while($rs = mysql_fetch_array($query)){
+$query=mysqli_query($con,$sql);
+while($rs = mysqli_fetch_array($query,MYSQLI_ASSOC)){
 ?>
 <option value="<? echo $rs['pid']; ?>">  <? echo $rs['profession']; ?> </option>
 <?
