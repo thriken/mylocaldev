@@ -1,0 +1,6 @@
+2026.6.20
+GET:
+https://5sservice.kugou.com/song/getsongurl?appid=2918&clientver=1000&mid=825ee485d0066d506785a4e0f13fa531&uuid=825ee485d0066d506785a4e0f13fa531&dfid=2ULLBG2Imj6g16yEmV26lXnb&songid=1804268&songtype=yc&version=6.6.72&clienttime=1781511767626&signature=d331b15df3441fec67c73743e60754b1
+
+callback:
+{"msg":"","code":0,"data":{"songid":1804268,"songtype":"yc","squrl":"","squrl_backup":"","squrlmd5":"","sqsize":0,"sqext":"","hqurl":"","hqurl_backup":"","hqurlmd5":"","hqsize":0,"hqext":"","lqurl":"http:\/\/wsaudio2bssdlbig.kugou.com\/202606220753\/78b4f34bd3a52f7306da62d2a859bb79\/bss\/extname\/wsaudio\/51fea23d5e3bc198ca6b4a7593449841.mp3","lqurl_backup":"http:\/\/wsaudiobssdlbig.cloud.kugou.com\/202606220753\/833a520c31e044b7118b9db169f40009\/bss\/extname\/wsaudio\/51fea23d5e3bc198ca6b4a7593449841.mp3","lqurlmd5":"51fea23d5e3bc198ca6b4a7593449841","lqsize":"3965640","lqext":"mp3","songName":" \u4e58\u98ce\u604b ","songKind":1,"user":{"ID":16070939,"NN":"\u5c0f\u65ed\u97f3\u4e50\u56e2\u961f","I":"https:\/\/wsingbssdl.kugou.com\/1063c7f7a80f9a3bab8a4a45dd853e85.png"},"DigitalAlbumID":0},"success":true,"message":"\u6210\u529f"}
